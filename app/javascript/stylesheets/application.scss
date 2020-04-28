@@ -1,1 +1,8 @@
 @import "bootstrap";
+
+video {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  background-color: gray;
+}

@@ -1,10 +1,18 @@
 <div data-controller="demo" class="container">
   <div class="row">
-    <video data-target="demo.main" autoplay playsinline></video>
-    <video data-target="demo.remote" autoplay playsinline></video>
+    <div class="col d-flex flex-column align-items-center">
+      <div class="col bg-primary text-white text-center mb-4">Local Video</div>
+      <video height="240" data-target="demo.main" autoplay playsinline></video>
+    </div>
+    <div class="col d-flex flex-column align-items-center">
+      <div class="col bg-dark text-white text-center mb-4">Remote Video</div>
+      <video height="240" data-target="demo.remote" autoplay playsinline></video>
+    </div>
   </div>
-  <div class="row">
-    <button data-action="demo#getUserMedia" class="btn btn-primary">Get Video</button>
-    <button data-action="demo#joinRoom" class="btn btn-success">Join Room</button>
+  <div class="row mt-4">
+    <div class="col">
+      <button data-action="demo#getUserMedia" class="btn btn-light">Get Video</button>
+      <button data-action="demo#joinRoom" class="btn btn-light ml-4">Join Room</button>
+    </div>
   </div>
 </div>
