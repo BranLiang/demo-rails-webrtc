@@ -8,7 +8,7 @@ class DemoChannel < ApplicationCable::Channel
     when "OFFER", "ANSWER", "CANDIDATE"
       ActionCable.server.broadcast(room_name, data)
     when "TOKEN"
-      TwilioClient.instance.tokens.create.ice_servers
+      servers = TwilioClient.instance.tokens.create.ice_servers
       ActionCable.server.broadcast(room_name, { type: "TOKEN", servers: servers })
     else
       puts "Unknown signal type: #{data['type']}"
