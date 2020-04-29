@@ -1,24 +1,51 @@
-# README
+# DEMO RAILS WEBRTC
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Demo show how to build a video conference app with ruby on rails.
 
-Things you may want to cover:
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/6628202/80599587-c0d50900-8a5d-11ea-8451-66a21e5e2fcc.gif">
+</p>
 
-* Ruby version
+## Tutorals
 
-* System dependencies
+## Development setup
 
-* Configuration
+Install dependencies
 
-* Database creation
+```sh
+bundle install
+yarn install
+```
 
-* Database initialization
+Add twillio credentials
 
-* How to run the test suite
+```sh
+rails credentials:edit
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+```yml
+twilio_account_sid: xxxx
+twilio_auth_token: xxxx
+```
 
-* Deployment instructions
+Start server
 
-* ...
+```sh
+bundle exec rails server
+```
+
+## Usage example
+
+1. Open two tabs on your browser
+2. Click `Get Video` on both tabs
+3. Wait several seconds until both connection are initialized
+4. Click `Join room` on one tab only!
+5. Enjoy the demo video meeting!
+
+## Contributing
+
+1. Fork it (<https://github.com/BranLiang/demo-rails-webrtc/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
