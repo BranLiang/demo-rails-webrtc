@@ -3,7 +3,7 @@
 Demo show how to build a video conference app with ruby on rails.
 
 <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/6628202/80599587-c0d50900-8a5d-11ea-8451-66a21e5e2fcc.gif">
+  <img height="300" src="https://user-images.githubusercontent.com/6628202/80599587-c0d50900-8a5d-11ea-8451-66a21e5e2fcc.gif">
 </p>
 
 ## Tutorals
