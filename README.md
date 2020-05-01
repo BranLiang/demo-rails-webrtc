@@ -10,6 +10,8 @@ Demo show how to build a video conference app with ruby on rails.
 
 https://medium.com/@BranLiang/a-complete-guide-to-webrtc-with-ruby-on-rails-9ea68e67154e
 
+https://ruby-china.org/topics/39820
+
 ## Development setup
 
 Install dependencies
